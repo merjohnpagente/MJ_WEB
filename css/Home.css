@@ -197,46 +197,28 @@ span {
 
 .typing-text span {
     position: relative;
-}
-
-.typing-text span::before {
-    content: "software Developer";
     color: #b74b4b;
-    animation: words 20s infinite, fadeIn 1s ease-out;
+    display: inline-block;
+    min-height: 1.2em;
 }
 
 .typing-text span::after {
     content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8px;
-    animation: cursor 0.6s infinite;
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: #b74b4b;
+    margin-left: 6px;
+    vertical-align: -0.12em;
+    animation: blink 0.7s infinite;
 }
 
-@keyframes cursor {
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
     50% {
-        border-left: 3px solid #b74b4b;
-    }
-}
-
-@keyframes words {
-    0%, 20% {
-        content: "Student";
-    }
-    21%, 40% {
-        content: "Developer";
-    }
-    41%, 60% {
-        content: "Learning Web Designer";
-    }
-    61%, 80% {
-        content: "Youtuber";
-    }
-    81%, 100% {
-        content: "Student";
+        opacity: 0;
     }
 }
 
