@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="../css/Home.css">
     <title>Merjohn Pagente Website</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">John</a>
-        <nav>
+        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav id="nav-menu">
             <a href="#" class="active">Home</a>
-            <a href="About.html" >About</a>
-            <a href="Gallery.html" >Gallery</a>    
-            <a href="index.html   " >Logout</a>
+            <a href="About.html">About</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="../index.html">Logout</a>
         </nav>
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="john.jpg" alt="">
+            <img src="../assets/images/john.jpg" alt="MerJohn Pagente">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>MerJohn B. Pagente Welcome To My Website</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I am a 20-year-old student currently enrolled at Tangub City Global College, 
-                where I am pursuing a Bachelor of Science in Computer Studies. My passion for technology and problem-solving 
+            <p>I am a 20-year-old student currently enrolled at Tangub City Global College,
+                where I am pursuing a Bachelor of Science in Computer Studies. My passion for technology and problem-solving
                 has driven me to choose this field, as it offers endless opportunities for learning and growth.
-                Throughout my academic journey, I have been eager to expand my knowledge in various areas of computer science, 
-                including programming, web development. I am deeply committed to honing my technical skills 
+                Throughout my academic journey, I have been eager to expand my knowledge in various areas of computer science,
+                including programming, web development. I am deeply committed to honing my technical skills
                 and staying updated with the latest technological advancements.<br><br>
             CONTACT ME:<BR>
               Gmail: Merjohnmacalisang@gmail.com
@@ -42,6 +45,6 @@
             <a href="About.html" class="btn">About Luxmundis</a>
         </div>
     </section>
+    <script src="../js/menu.js" defer></script>
 </body>
 </html>
-    
